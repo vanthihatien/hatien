@@ -1,4 +1,7 @@
-<h1>New product</h1>
+<h1 class="new-product-title">New product</h1>
 
-<%= render "form", product: @product %>
-<%= link_to "Cancel", products_path %>
+<div class="form-container">
+  <%= render "form", product: @product %>
+</div>
+
+<%= link_to "Cancel", products_path, class: "cancel-link" %>
