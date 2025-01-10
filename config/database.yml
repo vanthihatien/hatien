@@ -82,6 +82,7 @@ production:
   primary: &primary_production
     <<: *default
     database: newtien_production
+    url: <%= ENV['DATABASE_URL'] %>
     username: newtien
     password: <%= ENV["NEWTIEN_DATABASE_PASSWORD"] %>
   cache:
